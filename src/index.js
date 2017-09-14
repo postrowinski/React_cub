@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import './style.css';
+import Nav from './Nav.js';
+import Hero from './Hero.js';
+import Features from './Features.js';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+class App extends Component {
+    render() {
+        return (
+            <div>
+                <Nav />
+                <Hero />
+                <Features />
+            </div>
+        );
+    }
+}
+
+ReactDOM.render(<App />, document.querySelector('#root'));
+
