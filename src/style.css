@@ -4,7 +4,6 @@
 /* GENERAL */
 
 html {
-    font-size: 10px;
     background: #0f0f0f;
 }
 
@@ -13,14 +12,18 @@ html {
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
-    font-size: 1.6rem;
+    font-size: 16px;
 }
 
 .container {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
-    padding: 0 1rem;
+    padding: 0 20px;
+}
+
+[class=*'col'] {
+    padding: 0 20px;
 }
 
 a {
@@ -35,29 +38,29 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 7.2rem;
+    font-size: 72px;
 }
 
 h2 {
-    font-size: 3.6rem;
+    font-size: 36px;
     color: #ffc61a;
 }
 
 h3 {
     font-size: 20px;
-    letter-spacing: 1.5rem;
+    letter-spacing: 15px;
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 18px;
 }
 
 .btn {
     background: #010101;
     border-radius: 6px;
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: 700;
-    padding: 1.5rem 3rem;
+    padding: 15px 30px;
     letter-spacing: 1px;
     color: #fff;
     text-transform: uppercase;
@@ -66,22 +69,17 @@ p {
     cursor: pointer;
 }
 
-.btn:hover {
+.btn:hover, .features input[type='submit']:hover {
     background: #fff;
     border-color: #000;
     color: #000;
-}
-
-.col {
-    margin: 0 1rem;
-    flex: 1;
 }
 
 /* NAV */
 
 nav > .container {
     display: flex;
-    min-height: 10rem;
+    min-height: 100px;
 }
 
 .logo-place, .nav {
@@ -92,7 +90,7 @@ nav > .container {
 
 .logo-place {
     position: relative;
-    top: -1.2rem;
+    top: -12px;
 }
 
 .logo span {
@@ -114,14 +112,14 @@ nav > .container {
 
 nav li {
     text-transform: uppercase;
-    margin-right: 1.5rem;
+    margin-right: 15px;
 }
 
 nav li a {
-    padding: 1.2rem 2rem 1rem;
+    padding: 12px 20px 10px;
     display: block;
-    border-radius: 1.7rem;
-    font-size: 1.7rem;
+    border-radius: 17px;
+    font-size: 17px;
     font-weight: 700;
     color: #fff;
     transition: 0.5s;
@@ -137,24 +135,24 @@ nav li .active, nav li a:hover {
 /* HERO */
 .hero > .container {
     text-align: center;
-    min-height: 74rem;
+    min-height: 740px;
     flex-direction: column;
 }
 
 .hero h2 {
-    margin-top: 6.5rem;
+    margin-top: 65px;
 }
 
 .hero h3 {
-    margin-top: 1.5rem;
+    margin-top: 15px;
 }
 
 /* FEATURES */
 .features {
-    padding-top: 14rem;
+    padding-top: 140px;
     position: relative;
     background: #ffc61a;
-    min-height: 70rem;
+    min-height: 700px;
 }
 
 .features img {
@@ -167,22 +165,159 @@ nav li .active, nav li a:hover {
 
 .features h2, .features h3 {
     color: #000;
-    letter-spacing: 0.2rem;
+    letter-spacing: 2px;
 }
 
 .features h3 {
-    font-size: 3rem;
-    margin-bottom: 2.4rem;
+    font-size: 30px;
+    margin-bottom: 24px;
 }
 
 .features h2 {
-    font-size: 4.6rem;
-    margin-bottom: 4rem;
+    font-size: 46px;
+    margin-bottom: 40px;
     line-height: 1.3;
 }
 
 .features .btn {
-    margin-top: 7.5rem;
+    margin: 75px 0;
+}
+
+.features .container > .row:last-child {
+    align-items: center;
+}
+
+.call-form {
+    padding: 20px;
+    background: #fff;
+    max-width: 450px;
+    margin: auto;
+    height: 100%;
+    box-shadow: 6px 6px 30px rgba(0,0,0,0.7);
+}
+
+.features .form-header {
+    text-align: center;
+    font-size: 34px;
+    color: #ffc61a;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.features input[type='text'] {
+    border: none;
+    border-bottom: 2px solid #e4e4e4;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.features label {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.features input[type='submit'] {
+    display: block;
+    height: 40px;
+    background: #000;
+    border-radius: 8px;
+    border-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+    width: 100%;
+    margin: 15px 10px;
+    transition: 0.5s;
+}
+
+/* BLOG */
+.blog {
+    background: #fff;
+}
+
+.blog .container {
+    flex-direction: column;
+}
+
+.blog h2, .blog h1 {
+    text-align: center;
+}
+
+.blog h2 {
+    margin: 50px 0 0;
+    font-size: 35px;
+}
+
+.blog h1 {
+    font-size: 44px;
+    color: #000;
+    margin: 0 0 150px;
+    position: relative;
+    top: -10px;
+}
+
+.blog-offert {
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: #f5f4f2;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.blog-offert:hover {
+    background: #ffc544;
+    cursor: default;
+}
+
+.blog-offert:hover h2 {
+    color: #000;
+}
+
+.blog-offert:hover .btn {
+    background: #000;
+    color: #fff;
+}
+
+.blog .btn {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    background: #ffc544;
+    padding: 7px 21px;
+    margin-bottom: 20px;
+}
+
+.blog .btn:hover {
+    border-color: #000;
+    background: #fff;
+    color: #000;
+}
+
+.blog img {
+    position: absolute;
+    transform: translateY(-170%);
+}
+
+.blog h3 {
+    letter-spacing: inherit;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.blog p {
+    padding: 0 25px;
+}
+
+.blog .blog-offert h2 {
+    margin: 15px 0;
 }
 
 /* MEDIA */
@@ -198,8 +333,8 @@ nav li .active, nav li a:hover {
     }
     
     nav li a {
-        margin: 0 0 1rem;
-        padding: 1.2rem 5rem;   
+        margin: 0 0 10px;
+        padding: 12px 50px;   
     }
     
     .nav {
@@ -209,31 +344,31 @@ nav li .active, nav li a:hover {
     }
     
     .logo-place {
-        margin: 2rem 0;
+        margin: 20px 0;
         justify-content: center;
         top: 0;
     }
     /* MEDIA HERO */
     .hero > .container {
         min-height: auto;
-        height: 40rem;
+        height: 400px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     .hero h1 {
-       font-size: 4rem; 
+       font-size: 40px; 
     }
     
     .hero h2 {
         margin-top: 0;
-        font-size: 1.8rem;
+        font-size: 18px;
     }
 
     .hero h3 {
-        margin-top: 2.5rem;
-        font-size: 1.4rem;
-        letter-spacing: 0.6rem;
+        margin-top: 25px;
+        font-size: 14px;
+        letter-spacing: 6px;
     }
     
     /* MEDIA FEATURES */

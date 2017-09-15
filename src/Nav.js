@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
-
 class Nav extends Component {
  
     render() {
         const headers = ['About', 'Features', 'Blog', 'Order now', 'Contacts'];
         const navList = headers.map((header) =>
-            <li><a href=''>{header}</a></li>                       
+            <li>
+                <a href={'#'+header.toLowerCase()}> {header} </a>
+            </li>                       
         );
               
         return (
