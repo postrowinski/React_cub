@@ -9,7 +9,9 @@ import Features from './Features.js';
 import Blog from './Blog.js';
 import Details from './Details.js';
 import Order from './Order.js';
-import Clients from './Clients.js'
+import Clients from './Clients.js';
+import Slogan from './Slogan.js';
+import Footer from './Footer.js';
 
 class App extends Component {
     render() {
@@ -22,10 +24,12 @@ class App extends Component {
                 <Details />
                 <Order />
                 <Clients />
+                <Slogan />
+                <Footer />
             </div>
         );
     }
-}
+};
 
 ReactDOM.render(<App />, document.querySelector('#root'));
 
