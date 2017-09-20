@@ -4,7 +4,7 @@ import car from '../src/offert_car.png';
 class Blog extends Component {
     render() {
         return (
-            <div className='blog'>
+            <section className='blog'>
                 <div className='container'>
                     <h2>Our</h2>
                     <h1>Tariffs</h1>
@@ -38,7 +38,7 @@ class Blog extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 };

@@ -35,7 +35,7 @@ class Footer extends Component {
                         <div className='col-md-4'>
                             <h4>Contact</h4>
                             <div className='line-separator'></div>
-                            <div className='row'>
+                            <div className='contact-row'>
                                 <div className='col-xs-1'>
                                     <i className='fa fa-road'></i>
                                 </div>
@@ -43,7 +43,7 @@ class Footer extends Component {
                                     <p className='contact-paragraph'>+123, Main Street, Your City, New York, USA 789456</p>
                                 </div>
                             </div>
-                            <div className='row'>
+                            <div className='contact-row'>
                                 <div className='col-xs-1'>
                                     <i className='fa fa-mobile fa-lg'></i>
                                 </div>
@@ -51,7 +51,7 @@ class Footer extends Component {
                                     <p className='contact-paragraph'>+123 4567 8900</p>
                                 </div>
                             </div>
-                            <div className='row'>
+                            <div className='contact-row'>
                                 <div className='col-xs-1'>
                                     <i className='fa fa-envelope'></i>
                                 </div>
@@ -59,7 +59,7 @@ class Footer extends Component {
                                     <p className='contact-paragraph'>free@psdfreebies.com</p>
                                 </div>
                             </div>
-                            <div className='row'>
+                            <div className='contact-row'>
                                 <div className='col-xs-1'>
                                     <i className='fa fa-envelope'></i>
                                 </div>

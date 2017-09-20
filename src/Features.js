@@ -4,7 +4,7 @@ import heroCar from '../src/heroCar.png';
 class Features extends Component {
     render() {
         return(
-            <div className='features'>
+            <section className='features'>
                 <img src={heroCar} alt='' />
                 <div className='container'>
                     <div className='row'>
@@ -15,7 +15,7 @@ class Features extends Component {
                             <button className="btn">Read More</button>
                         </div>
                         <div className='col-md-6'>
-                            <div className='row'>
+                            <div className='form-container'>
                                 <form className='call-form'>
                                     <h3 className='form-header'>Cab</h3>
                                     <div className='row'>
@@ -57,7 +57,7 @@ class Features extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 };
